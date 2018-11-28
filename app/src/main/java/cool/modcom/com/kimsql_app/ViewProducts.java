@@ -3,6 +3,7 @@ package cool.modcom.com.kimsql_app;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
 import com.loopj.android.http.AsyncHttpClient;
@@ -63,6 +64,15 @@ public class ViewProducts extends AppCompatActivity {
                     }
                 }//end of for loop
                 talk.dismiss();//stop dialog
+                //we now map our array list to our listview
+                SimpleAdapter adapter = new SimpleAdapter(
+                        ViewProducts.this,
+                        arrayList,
+                        R.layout.design,
+                        new String[]{"name", "type", "cost", "contact"},
+                        new int[]{R.id.d_name, R.id.d_type, R.id.d_cost, R.id.d_contact}
+
+                );
             }
 
             @Override
