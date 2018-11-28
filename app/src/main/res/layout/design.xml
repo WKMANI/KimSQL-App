@@ -11,6 +11,8 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:text="TextView"
+        android:textColor="#11b9c9"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -20,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="TextView"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/d_contact"
         app:layout_constraintStart_toStartOf="@+id/d_contact"
         app:layout_constraintTop_toTopOf="parent" />

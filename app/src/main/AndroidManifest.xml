@@ -23,7 +23,7 @@
         </activity>
         <activity android:name=".AddProduct" />
         <activity android:name=".Login" />
-        <activity android:name=".NewProducts"></activity>
+        <activity android:name=".ViewProducts"></activity>
     </application>
 
 </manifest>
