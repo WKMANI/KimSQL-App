@@ -3,6 +3,7 @@ package cool.modcom.com.kimsql_app;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.Toast;
 
@@ -73,6 +74,9 @@ public class ViewProducts extends AppCompatActivity {
                         new int[]{R.id.d_name, R.id.d_type, R.id.d_cost, R.id.d_contact}
 
                 );
+
+                ListView productslist = findViewById(R.id.productslist);
+                productslist.setAdapter(adapter);//done
             }
 
             @Override
