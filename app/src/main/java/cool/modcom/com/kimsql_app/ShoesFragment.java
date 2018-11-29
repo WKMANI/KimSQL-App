@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class HomeFragment extends Fragment {
+public class ShoesFragment extends Fragment {
     //Fragments can be attached in an activity
     //to create a Fragment onCreateView is used as the class entry point
     //activities use onCreate itself as class entry point
@@ -18,7 +18,7 @@ public class HomeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         //connect this fragment to its layout
-        View xml = inflater.inflate(R.layout.home_fragment, container, false);
+        View xml = inflater.inflate(R.layout.shoes_fragment, container, false);
 
         return xml; //returns the layout
 
