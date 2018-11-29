@@ -23,4 +23,4 @@ public class BagsFragment extends Fragment {
         return xml; //returns the layout
 
     }
-}
+}//end

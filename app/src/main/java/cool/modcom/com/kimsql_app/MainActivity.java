@@ -137,7 +137,19 @@ public class MainActivity extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+            // return PlaceholderFragment.newInstance(position + 1);
+            if (position == 0) {
+
+                return new HomeFragment();
+            } else if (position == 1) {
+
+                return new BagsFragment();
+            } else if (position == 2) {
+
+                return new ShoesFragment();
+            } else {
+                return null;
+            }//end of Fragment replacement
         }
 
         @Override

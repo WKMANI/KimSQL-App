@@ -41,7 +41,7 @@ public class ViewProducts extends AppCompatActivity {
         //once we have got the products we dismiss the dialog
 
         AsyncHttpClient client = new AsyncHttpClient();
-        client.get("http://modkenya.com/joe/view.php", new JsonHttpResponseHandler() {
+        client.get("http://modkenya.com/wkmani/view.php", new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(int statusCode, Header[] headers, JSONArray response) {
                 //use a loop in order to retrieve JSON at a certain point "i"
